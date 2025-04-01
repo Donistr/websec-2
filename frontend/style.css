@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#scheduleContent table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#scheduleContent th, #scheduleContent td {
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+#scheduleContent th:first-child, #scheduleContent td:first-child {
+    width: 6%;
+    min-width: 60px;
+}
+
+#scheduleContent th:not(:first-child), #scheduleContent td:not(:first-child) {
+    width: 15.67%;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    .container {
+        padding: 10px;
+    }
+    #scheduleContent th:first-child, #scheduleContent td:first-child {
+        width: auto;
+        min-width: 50px;
+    }
+    #scheduleContent th:not(:first-child), #scheduleContent td:not(:first-child) {
+        min-width: 100px;
+    }
+    #scheduleContent th, #scheduleContent td {
+        font-size: 0.9rem;
+    }
+}
+
+#searchResults {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.lecture {
+    font-weight: bold;
+    color: #16A086;
+}
+
+.practice {
+    font-weight: bold;
+    color: #64B5FF;
+}
+
+.laboratory {
+    font-weight: bold;
+    color: #DF5FFF;
+}
+
+.exam {
+    font-weight: bold;
+    color: #0B40B3;
+}
+
+.credit {
+    font-weight: bold;
+    color: #FFDE7B;
+}
+
+.consultation {
+    font-weight: bold;
+    color: #0BB4BF;
+}
+
+.other {
+    font-weight: bold;
+    color: #F19236;
+}
