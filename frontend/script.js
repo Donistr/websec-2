@@ -94,7 +94,7 @@ $(document).ready(function() {
     
             data.days.forEach(function(day) {
                 $theadRow.append(
-                    $('<th>').html(`${day.info}<br>${day.date}`)
+                    $('<th>').html(`${day.info}<br>${day.date.split('-').reverse().join('-')}`)
                 );
             });
     
